@@ -302,49 +302,48 @@
                             "to": 20
                         }
                     ]
+                },
+                {
+                    "start": 0.3,
+                    "end": 0.35,
+                    "actions": [
+                        {
+                            "type": "switch_scene",
+                            "to": "overview"
+                        }
+                    ]
+                },
+                {
+                    "start": 0.5,
+                    "end": 0.55,
+                    "actions": [
+                        {
+                            "type": "switch_scene",
+                            "to": "landscape"
+                        }
+                    ]
+                },
+                {
+                    "start": 0.7,
+                    "end": 0.75,
+                    "actions": [
+                        {
+                            "type": "switch_scene",
+                            "to": "history"
+                        }
+                    ]
+                },
+                {
+                    "start": 0.9,
+                    "end": 0.95,
+                    "actions": [
+                        {
+                            "type": "switch_scene",
+                            "to": "ending"
+                        }
+                    ]
                 }
-            },
-            {
-                "start": 0.3,
-                "end": 0.35,
-                "actions": [
-                    {
-                        "type": "switch_scene",
-                        "to": "overview"
-                    }
-                ]
-            },
-            {
-                "start": 0.5,
-                "end": 0.55,
-                "actions": [
-                    {
-                        "type": "switch_scene",
-                        "to": "landscape"
-                    }
-                ]
-            },
-            {
-                "start": 0.7,
-                "end": 0.75,
-                "actions": [
-                    {
-                        "type": "switch_scene",
-                        "to": "history"
-                    }
-                ]
-            },
-            {
-                "start": 0.9,
-                "end": 0.95,
-                "actions": [
-                    {
-                        "type": "switch_scene",
-                        "to": "ending"
-                    }
-                ]
-            }
-        ]
-    }
-]
+            ]
+        }
+    ]
 }
