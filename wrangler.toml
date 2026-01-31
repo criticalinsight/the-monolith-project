@@ -1,0 +1,11 @@
+
+name = "the-monolith-project"
+pages_build_output_dir = "./public"
+compatibility_date = "2026-01-29"
+
+[vars]
+ASSETS_R2_PATH_PREFIX = "/assets-r2"
+
+[[r2_buckets]]
+binding = "R2_ASSETS"
+bucket_name = "the-monolith-assets"
