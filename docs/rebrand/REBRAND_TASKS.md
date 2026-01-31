@@ -1,0 +1,45 @@
+# Task: Stabilize Core Manifest
+
+- [x] Extract and verify Credits text
+  - [x] Search for credits keywords in codebase (`index-Dqw2FXdk.js`)
+  - [x] Identify core team and roles
+  - [x] Update credits to "Creator: MoeCapital" and remove others
+- [x] Document and finalize ownership migration
+  - [x] Simulate security/SRE bottlenecks (Cloudflare R2/Pages limits)
+- [x] Phase 6: Full Asset Restoration
+  - [x] Query R2 for full object list (Found 180 paths)
+  - [x] Download assets from R2 (180/180)
+  - [/] Consolidate into `public/assets/`
+  - [ ] Redeploy and verify
+- [x] Initial Import & R2 Asset Synchronization
+- [x] Financial Rebrand Implementation (Narrative Transformation)
+- [x] JavaScript Engine Repair (Syntax/JSON Fixes)
+- [x] Credit Restoration (MoeCapital)
+- [x] Desktop Visual Verification (Playwright & Subagent)
+- [x] Mobile Visual Verification (Symlink Strategy & Playwright)
+- [x] Final Comprehensive Visual Audit
+  - [x] Desktop standard check
+  - [x] Mobile responsive check
+- [x] Replace Production Deployment at the-monolith-project.pages.dev
+- [x] Rename Site Title to "Moe" in index.html
+- [x] Remove Legacy Domain References (themonolithproject.net)
+- [x] Final Walkthrough Delivery
+- [x] Phase 1: Deep Assessment
+  - [x] Audit imported components
+  - [x] Research `choreography.json` and asset dependencies
+  - [x] Simulate security/SRE bottlenecks (Cloudflare R2/Pages limits)
+- [x] Phase 2: PRD Artifact Generation
+  - [x] Create `docs/specs/monolith_engine.md`
+  - [x] Define User Stories and Gherkin Acceptance Criteria
+  - [x] Map Data Flow (R2 -> Worker -> FE)
+- [/] Phase 3: Stabilization & Verification
+  - [/] Fix syntax error in `public/assets-r2/assets/choreography.json`
+  - [ ] Create validation script `scripts/validate_manifest.js`
+  - [ ] Run validation
+- [ ] Phase 4: Autonomous Handoff
+  - [ ] Push stabilized manifest to GitHub
+  - [ ] Finalize walkthrough
+- [x] Phase 5: Deployment
+  - [x] Verify `wrangler.toml` configuration
+  - [x] Deploy `public` to Cloudflare Pages
+  - [x] Verified deployment at master.the-monolith-project.pages.dev
