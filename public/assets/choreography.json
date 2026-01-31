@@ -2,7 +2,7 @@
     "manifest_version": "1.0",
     "scenes": {
         "intro": {
-            "title": "The Null Void",
+            "title": "Capital Foundations",
             "assets": [
                 {
                     "id": "monolith",
@@ -41,7 +41,7 @@
             }
         },
         "solar": {
-            "title": "The Solar System",
+            "title": "The Liquidity Bridge",
             "assets": [
                 {
                     "id": "earth",
@@ -84,7 +84,7 @@
             }
         },
         "overview": {
-            "title": "The Overview",
+            "title": "Market Navigation",
             "assets": [
                 {
                     "id": "desert",
@@ -127,7 +127,7 @@
             }
         },
         "landscape": {
-            "title": "The Landscape",
+            "title": "Alpha Horizons",
             "assets": [
                 {
                     "id": "forest",
@@ -165,7 +165,7 @@
             }
         },
         "history": {
-            "title": "The History",
+            "title": "The Research Desk",
             "assets": [
                 {
                     "id": "flower",
@@ -203,7 +203,7 @@
             }
         },
         "ending": {
-            "title": "The End",
+            "title": "The Wealth Legacy",
             "assets": [
                 {
                     "id": "logo",
@@ -302,49 +302,48 @@
                             "to": 20
                         }
                     ]
+                },
+                {
+                    "start": 0.3,
+                    "end": 0.35,
+                    "actions": [
+                        {
+                            "type": "switch_scene",
+                            "to": "overview"
+                        }
+                    ]
+                },
+                {
+                    "start": 0.5,
+                    "end": 0.55,
+                    "actions": [
+                        {
+                            "type": "switch_scene",
+                            "to": "landscape"
+                        }
+                    ]
+                },
+                {
+                    "start": 0.7,
+                    "end": 0.75,
+                    "actions": [
+                        {
+                            "type": "switch_scene",
+                            "to": "history"
+                        }
+                    ]
+                },
+                {
+                    "start": 0.9,
+                    "end": 0.95,
+                    "actions": [
+                        {
+                            "type": "switch_scene",
+                            "to": "ending"
+                        }
+                    ]
                 }
-            },
-            {
-                "start": 0.3,
-                "end": 0.35,
-                "actions": [
-                    {
-                        "type": "switch_scene",
-                        "to": "overview"
-                    }
-                ]
-            },
-            {
-                "start": 0.5,
-                "end": 0.55,
-                "actions": [
-                    {
-                        "type": "switch_scene",
-                        "to": "landscape"
-                    }
-                ]
-            },
-            {
-                "start": 0.7,
-                "end": 0.75,
-                "actions": [
-                    {
-                        "type": "switch_scene",
-                        "to": "history"
-                    }
-                ]
-            },
-            {
-                "start": 0.9,
-                "end": 0.95,
-                "actions": [
-                    {
-                        "type": "switch_scene",
-                        "to": "ending"
-                    }
-                ]
-            }
-        ]
-    }
-]
+            ]
+        }
+    ]
 }
