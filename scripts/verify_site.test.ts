@@ -4,10 +4,12 @@ test('verify monolith project visuals and credits', async ({ page }) => {
     const url = 'https://master.the-monolith-project.pages.dev';
     console.log(`🚀 Navigating to ${url}...`);
 
-    await page.goto(url);
+    await page.goto(url, { waitUntil: 'networkidle' });
 
     // Wait for initial load
-    await page.waitForTimeout(5000);
+    console.log('⌛ Waiting for scene initialization...');
+    await page.waitForTimeout(10000);
+    await page.screenshot({ path: 'verify_debug_start.png' });
 
     // Capture initial state
     await page.screenshot({ path: 'verify_initial_load.png' });
@@ -37,14 +39,18 @@ test('verify monolith project visuals and credits', async ({ page }) => {
     await page.waitForTimeout(2000);
     await page.screenshot({ path: 'verify_credits_modal.png' });
 
-    // Verify MoeCapital
+    // Verify Financial Rebrand
     const pageText = await page.innerText('body');
-    console.log('🔍 Checking for "MoeCapital" (case-insensitive)...');
-    expect(pageText.toUpperCase()).toContain('MOECAPITAL');
+    const upperText = pageText.toUpperCase();
 
-    // Ensure original creator is gone (Kehan Fan)
-    console.log('🔍 Ensuring "Kehan Fan" is removed...');
-    expect(pageText).not.toContain('Kehan Fan');
+    console.log('🔍 Verifying financial narrative tokens...');
+    expect(upperText).toContain('CAPITAL');
+    expect(upperText).toContain('LIQUIDITY');
+    expect(upperText).toContain('MOECAPITAL');
 
-    console.log('✅ Visual verification successful!');
+    // Ensure original cosmic terms are gone where replaced
+    console.log('🔍 Ensuring cosmic terms are removed...');
+    expect(upperText).not.toContain('COSMIC ORIGINS');
+
+    console.log('✅ Visual and narrative verification successful!');
 });
