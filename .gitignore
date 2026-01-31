@@ -8,3 +8,4 @@ dist
 
 # Sly Agent Data
 .sly/
+.env
