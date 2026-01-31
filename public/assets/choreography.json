@@ -1,0 +1,349 @@
+{
+    "manifest_version": "1.0",
+    "scenes": {
+        "intro": {
+            "title": "The Null Void",
+            "assets": [
+                {
+                    "id": "monolith",
+                    "path": "/assets/monolith.glb",
+                    "type": "glb"
+                }
+            ],
+            "audio": {
+                "ambient": "/assets/sfx-o/7_OVERVIEW.ogg",
+                "volume": 0.5,
+                "autoplay": true
+            },
+            "visuals": {
+                "background": "#050505",
+                "fog": {
+                    "color": "#050505",
+                    "density": 0.02
+                },
+                "post_processing": {
+                    "exposure": 1.0,
+                    "tone_mapping": "ACESFilmic"
+                }
+            },
+            "camera": {
+                "position": [
+                    0,
+                    0,
+                    5
+                ],
+                "target": [
+                    0,
+                    0,
+                    0
+                ],
+                "fov": 45
+            }
+        },
+        "solar": {
+            "title": "The Solar System",
+            "assets": [
+                {
+                    "id": "earth",
+                    "path": "/assets/models-o/2_solar/earth/earth.glb",
+                    "type": "glb"
+                },
+                {
+                    "id": "sun",
+                    "path": "/assets/models-o/2_solar/SolarBaseMeshSmoothShading.glb",
+                    "type": "glb"
+                }
+            ],
+            "audio": {
+                "ambient": "/assets/sfx-o/1_SOLAR.ogg",
+                "volume": 0.6
+            },
+            "visuals": {
+                "background": "#000000",
+                "fog": {
+                    "color": "#000000",
+                    "density": 0.0
+                },
+                "post_processing": {
+                    "exposure": 1.2,
+                    "tone_mapping": "ACESFilmic"
+                }
+            },
+            "camera": {
+                "position": [
+                    0,
+                    20,
+                    50
+                ],
+                "target": [
+                    0,
+                    0,
+                    0
+                ],
+                "fov": 60
+            }
+        },
+        "overview": {
+            "title": "The Overview",
+            "assets": [
+                {
+                    "id": "desert",
+                    "path": "/assets/models-o/7_overview/desert.glb",
+                    "type": "glb"
+                },
+                {
+                    "id": "swamp",
+                    "path": "/assets/models-o/7_overview/swamp.glb",
+                    "type": "glb"
+                }
+            ],
+            "audio": {
+                "ambient": "/assets/sfx-o/7_OVERVIEW.ogg",
+                "volume": 0.5
+            },
+            "visuals": {
+                "background": "#eecfa1",
+                "fog": {
+                    "color": "#eecfa1",
+                    "density": 0.04
+                },
+                "post_processing": {
+                    "exposure": 1.0,
+                    "tone_mapping": "Reinhard"
+                }
+            },
+            "camera": {
+                "position": [
+                    10,
+                    5,
+                    10
+                ],
+                "target": [
+                    0,
+                    0,
+                    0
+                ],
+                "fov": 50
+            }
+        },
+        "landscape": {
+            "title": "The Landscape",
+            "assets": [
+                {
+                    "id": "forest",
+                    "path": "/assets/models-o/8_landscape/forest/landscape3.glb",
+                    "type": "glb"
+                }
+            ],
+            "audio": {
+                "ambient": "/assets/sfx-o/8_LANDSCAPE.ogg",
+                "volume": 0.5
+            },
+            "visuals": {
+                "background": "#1a472a",
+                "fog": {
+                    "color": "#1a472a",
+                    "density": 0.05
+                },
+                "post_processing": {
+                    "exposure": 0.8,
+                    "tone_mapping": "ACESFilmic"
+                }
+            },
+            "camera": {
+                "position": [
+                    0,
+                    2,
+                    8
+                ],
+                "target": [
+                    0,
+                    1,
+                    0
+                ],
+                "fov": 45
+            }
+        },
+        "history": {
+            "title": "The History",
+            "assets": [
+                {
+                    "id": "flower",
+                    "path": "/assets/models-o/4_history/HistorySmallFlower1.glb",
+                    "type": "glb"
+                }
+            ],
+            "audio": {
+                "ambient": "/assets/sfx-o/4_HISTORY.ogg",
+                "volume": 0.5
+            },
+            "visuals": {
+                "background": "#2a2a2a",
+                "fog": {
+                    "color": "#2a2a2a",
+                    "density": 0.03
+                },
+                "post_processing": {
+                    "exposure": 0.9,
+                    "tone_mapping": "Cineon"
+                }
+            },
+            "camera": {
+                "position": [
+                    0,
+                    0,
+                    4
+                ],
+                "target": [
+                    0,
+                    0,
+                    0
+                ],
+                "fov": 40
+            }
+        },
+        "ending": {
+            "title": "The End",
+            "assets": [
+                {
+                    "id": "logo",
+                    "path": "/assets/models-o/10_ending/logo.glb",
+                    "type": "glb"
+                }
+            ],
+            "audio": {
+                "ambient": "/assets/sfx-o/9_FINAL.ogg",
+                "volume": 0.7
+            },
+            "visuals": {
+                "background": "#ffffff",
+                "fog": {
+                    "color": "#ffffff",
+                    "density": 0.1
+                },
+                "post_processing": {
+                    "exposure": 1.5,
+                    "tone_mapping": "Reinhard"
+                }
+            },
+            "camera": {
+                "position": [
+                    0,
+                    0,
+                    10
+                ],
+                "target": [
+                    0,
+                    0,
+                    0
+                ],
+                "fov": 30
+            }
+        }
+    },
+    "initial_scene": "intro",
+    "choreography": [
+        {
+            "id": "intro_sequence",
+            "trigger": "load",
+            "actions": [
+                {
+                    "target": "camera",
+                    "type": "pan",
+                    "duration": 2.0,
+                    "to": [
+                        0,
+                        2,
+                        5
+                    ]
+                },
+                {
+                    "target": "monolith",
+                    "type": "fade_in",
+                    "duration": 1.5,
+                    "delay": 0.5
+                }
+            ]
+        },
+        {
+            "id": "scroll_timeline",
+            "trigger": "scroll",
+            "segments": [
+                {
+                    "start": 0,
+                    "end": 0.1,
+                    "actions": [
+                        {
+                            "target": "monolith",
+                            "param": "rotation.y",
+                            "from": 0,
+                            "to": 1.57
+                        }
+                    ]
+                },
+                {
+                    "start": 0.15,
+                    "end": 0.25,
+                    "actions": [
+                        {
+                            "type": "switch_scene",
+                            "to": "solar"
+                        }
+                    ]
+                },
+                {
+                    "start": 0.25,
+                    "end": 0.5,
+                    "actions": [
+                        {
+                            "target": "camera",
+                            "param": "position.z",
+                            "from": 50,
+                            "to": 20
+                        }
+                    ]
+                },
+                {
+                    "start": 0.3,
+                    "end": 0.35,
+                    "actions": [
+                        {
+                            "type": "switch_scene",
+                            "to": "overview"
+                        }
+                    ]
+                },
+                {
+                    "start": 0.5,
+                    "end": 0.55,
+                    "actions": [
+                        {
+                            "type": "switch_scene",
+                            "to": "landscape"
+                        }
+                    ]
+                },
+                {
+                    "start": 0.7,
+                    "end": 0.75,
+                    "actions": [
+                        {
+                            "type": "switch_scene",
+                            "to": "history"
+                        }
+                    ]
+                },
+                {
+                    "start": 0.9,
+                    "end": 0.95,
+                    "actions": [
+                        {
+                            "type": "switch_scene",
+                            "to": "ending"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
